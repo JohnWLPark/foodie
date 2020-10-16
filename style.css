@@ -17,6 +17,10 @@ p {
     color: #111;
 }
 
+
+
+/* BANNER */
+
 .banner {
     position: relative;
     width: 100%;
@@ -59,6 +63,10 @@ p {
 .btn:hover {
     letter-spacing: 6px;
 }
+
+
+
+/* HEADER */
 
 header {
     position: fixed;
@@ -122,6 +130,10 @@ section {
     padding: 100px;
 }
 
+
+
+/* ABOUT US */
+
 .row {
     position: relative;
     width: 100%;
@@ -161,6 +173,10 @@ section {
     height: 100%;
     object-fit: cover;
 }
+
+
+
+/* MENU */
 
 .title {
     width: 100%;
@@ -210,7 +226,11 @@ section {
     color: #111;
 }
 
-.expert .content {
+
+
+/* EXPERTS */
+
+.experts .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,18 +239,18 @@ section {
     margin-top: 40px;
 }
 
-.expert .content .box {
+.experts .content .box {
     width: 250px;
     margin: 15px;
 }
 
-.expert .content .box .imgBx {
+.experts .content .box .imgBx {
     position: relative;
     width: 100%;
     height: 300px;
 }
 
-.expert .content .box .imgBx img {
+.experts .content .box .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -239,14 +259,18 @@ section {
     object-fit: cover;   
 }
 
-.expert .content .box .text {
+.experts .content .box .text {
     padding: 15px 0 5px;
 }
 
-.expert .content .box .text h3 {
+.experts .content .box .text h3 {
     font-weight: 400;
     color: #111;
 }
+
+
+
+/* TESTIMONIALS */
 
 .testimonials {
     background: url(images/bg2.jpg);
@@ -312,6 +336,10 @@ section {
     font-weight: 600;
 }
 
+
+
+/* CONTACT US */
+
 .contact {
     background: url(images/bg3.jpg);
     background-size: cover;
@@ -363,4 +391,122 @@ section {
     font-weight: 500;
     border: none;
     cursor: pointer;
+}
+
+
+
+/* FOOTER */
+
+.copyrightText {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.copyrightText p {
+    color: #333;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a {
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content {
+        margin-top: 20px;
+    }
+    .menu .content .box {
+        margin: 10px;
+    }
+    .menu .content .box .imgBx {
+        height: 260px;
+    }
+    .title {
+        text-align: center;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testimonials .content .box {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: #fff;
+    }
 }

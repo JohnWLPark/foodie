@@ -9,13 +9,14 @@
 <body>
     <header>
         <a href="#" class="logo">Foodie<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#experts">Experts</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#experts" onclick="toggleMenu();">Experts</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
     <section class="banner" id="banner">
@@ -102,7 +103,7 @@
         </div>
     </section>
 
-    <section class="expert" id="expert">
+    <section class="experts" id="experts">
         <div class="title">
             <h2 class="titleText">Our Kitchen <span>E</span>xperts</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -200,6 +201,10 @@
             </div>
         </div>
     </section>
+
+    <div class="copyrightText">
+        <p>Copyright 2020 John Park. All Rights Reserved</p>
+    </div>
 
     <script src="app.js"></script>
 </body>
